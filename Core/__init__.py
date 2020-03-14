@@ -1,3 +1,3 @@
-class Model:
-    def __init__(self):
-        super().__init__()
+from Core.BatchManager import *
+from Core.Model import *
+from Core.Tokenizer import *

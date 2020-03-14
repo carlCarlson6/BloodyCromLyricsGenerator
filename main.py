@@ -1,10 +1,10 @@
-import common
-import NN
-import torch
+from common import DataLoader
+from Core import Tokenizer
 
-dataLoader = common.DataLoader(TextFileName='Data\\BloodyCromLyrics.txt')
+dataLoader = DataLoader()
+dataLoader.LoadData(TextFileName='Data\\BloodyCromLyrics.txt')
 
-tokenizer = NN.Tokenizer()
+tokenizer = Tokenizer()
 encodedText = tokenizer.EncodeText(Text=dataLoader.Text, Char2IntDictionary=dataLoader.CharactersDictionary['Char2Int'])
 oneHotEncodedText = tokenizer.EncodeAsOneHot(EncodedText=encodedText)
 
