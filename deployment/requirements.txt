@@ -1,0 +1,9 @@
+torch==1.4.0+cpu #--find-links https://download.pytorch.org/whl/torch_stable.html
+numpy==1.18.1
+
+click==6.7
+Flask==1.0.2
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+Werkzeug==0.14.1
